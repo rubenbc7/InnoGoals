@@ -42,7 +42,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="InnoGoals"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -50,6 +50,7 @@ export default function Components(props) {
           height: 400,
           color: "white"
         }}
+        
         {...rest}
       />
       <Parallax image={require("assets/img/bg4.jpg")}>
@@ -60,7 +61,11 @@ export default function Components(props) {
                 <h1>Uppercut heavy machinegun</h1>
               </div>
               <div className={classes.brand}>
+<<<<<<< HEAD
                 <h1 className={classes.title}>Pibes Pibes Pibes.</h1>
+=======
+                <h1 className={classes.title}>InnoGoals</h1>
+>>>>>>> 02cc47c434972d72589cb46b0840d801e29d8c02
                 <h3 className={classes.subtitle}>
                   A Badass Material-UI Kit based on Material Design.
                 </h3>
@@ -72,7 +77,7 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        <SectionNavbars />
+        {/*<SectionNavbars />
         <SectionTabs />
         <SectionPills />
         <SectionNotifications />
@@ -89,7 +94,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload />*/}
       </div>
       <Footer />
     </div>

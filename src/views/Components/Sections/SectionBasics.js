@@ -32,31 +32,7 @@ export default function SectionBasics() {
   const [selectedEnabled, setSelectedEnabled] = React.useState("b");
   const [checkedA, setCheckedA] = React.useState(true);
   const [checkedB, setCheckedB] = React.useState(false);
-  React.useEffect(() => {
-    if (
-      !document
-        .getElementById("sliderRegular")
-        .classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderRegular"), {
-        start: [40],
-        connect: [true, false],
-        step: 1,
-        range: { min: 0, max: 100 }
-      });
-    }
-    if (
-      !document.getElementById("sliderDouble").classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderDouble"), {
-        start: [20, 60],
-        connect: [false, true, false],
-        step: 1,
-        range: { min: 0, max: 100 }
-      });
-    }
-    return function cleanup() {};
-  });
+
   const handleToggle = value => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -77,7 +53,7 @@ export default function SectionBasics() {
               Mi progreso
             </h2>
           </div>
-          <h2>
+          <h3>
             <small>Ultimos logros</small>
                 <br />
                 <small>Descripcion logro 1</small>
@@ -85,109 +61,77 @@ export default function SectionBasics() {
                 <small>Descripcion logro 2</small>
                 <br />
                 <small>Descripcion logro 3</small>
-          </h2>
+          </h3>
           <Button color="primary" simple>
-            <h3>Ver todos los logros!</h3>
+            <h5>Ver todos tus logros!</h5>
           </Button>
-          <div className={classes.space50} />
-          <h2>Meta mensual</h2>
-          <CustomLinearProgress
-                variant="determinate"
-                color="primary"
-                value={30}
-          />
+          <div className={classes.space40} />
+          <div>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6}>
+                <h3>Meta mensual</h3>
+                <CustomLinearProgress
+                  variant="determinate"
+                  color="primary"
+                  value={60}
+                />
+                <p style={{ float: 'left' }}>60%</p>
+                <p style={{ float: 'right'}}>Iphone 12</p>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6}>
+                <h3>Meta Anual</h3>
+                <CustomLinearProgress
+                  variant="determinate"
+                  color="info"
+                  value={20}
+                />
+                <p style={{ float: 'left' }}>20%</p>
+                <p style={{ float: 'right' }}>Viaje a Cancun</p>
+              </GridItem>
+            </GridContainer>
+          </div>
         </div>
-        <div className={classes.space50} />
+        <div className={classes.space70} />
         <div id="progress">
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.title}>
-                <h3>Progress Bars</h3>
-              </div>
-              <CustomLinearProgress
-                variant="determinate"
-                color="primary"
-                value={30}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="info"
-                value={60}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="success"
-                value={100}
-                style={{ width: "35%", display: "inline-block" }}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="warning"
-                value={100}
-                style={{ width: "20%", display: "inline-block" }}
-              />
-              <CustomLinearProgress
-                variant="determinate"
-                color="danger"
-                value={25}
-                style={{ width: "45%", display: "inline-block" }}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.title}>
-                <h3>Pagination</h3>
-              </div>
-              <Paginations
-                pages={[
-                  { text: 1 },
-                  { text: "..." },
-                  { text: 5 },
-                  { text: 6 },
-                  { active: true, text: 7 },
-                  { text: 8 },
-                  { text: 9 },
-                  { text: "..." },
-                  { text: 12 }
-                ]}
-              />
-              <Paginations
-                pages={[
-                  { text: "PREV" },
-                  { text: 1 },
-                  { text: 2 },
-                  { active: true, text: 3 },
-                  { text: 4 },
-                  { text: 5 },
-                  { text: "NEXT" }
-                ]}
-                color="info"
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-        <div id="sliders">
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.title}>
-                <h3>Sliders</h3>
-              </div>
-              <div id="sliderRegular" className="slider-primary" />
-              <br />
-              <div id="sliderDouble" className="slider-info" />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.title}>
-                <h3>Badges</h3>
-              </div>
-              <Badge>default</Badge>
-              <Badge color="primary">primary</Badge>
-              <Badge color="info">info</Badge>
-              <Badge color="success">success</Badge>
-              <Badge color="warning">warning</Badge>
-              <Badge color="danger">danger</Badge>
-              <Badge color="rose">rose</Badge>
-            </GridItem>
-          </GridContainer>
+          <div className={classes.title}>
+            <h2>
+              Progreso del equipo
+            </h2>
+          </div>
+          <h3>
+            <small>Tu equipo esta semana es:</small>
+                <br />
+                <small>Luis Alfonso</small>
+                <br />
+                <small>Puesto: Conserje</small>
+                <br />
+                <small>Ultimo logro: Descripcion del logro</small>
+                <br />
+                <Button color="primary" simple>
+                  <h5>Ver todos sus logros!</h5>
+                </Button>
+                <div className={classes.space50}/>
+                <small>Maria Duarte</small>
+                <br />
+                <small>Puesto: Secretaria</small>
+                <br />
+                <small>Ultimo logro: Descripcion del logro</small>
+                <br />
+                <Button color="primary" simple>
+                  <h5>Ver todos sus logros!</h5>
+                </Button>
+          </h3>
+          <div>
+            <h3>Meta semanal</h3>
+            <CustomLinearProgress
+              variant="determinate"
+              color="success"
+              value={60}
+            />
+              <p style={{ float: 'left' }}>60%</p>
+              <p style={{ float: 'right'}}>Membresia de Netflix (3 meses)</p>
+          </div>
+          <div className={classes.space70} />
         </div>
       </div>
     </div>

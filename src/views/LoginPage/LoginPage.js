@@ -37,8 +37,8 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
+        brand="InnoGoals"
+        rightLinks={<HeaderLinks/>}
         {...rest}
       />
       <div
@@ -55,7 +55,7 @@ export default function LoginPage(props) {
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
                   <CardHeader color="primary" className={classes.cardHeader}>
-                    <h4>Login</h4>
+                    <h4>Iniciar Sesión</h4>
                     <div className={classes.socialLine}>
                       <Button
                         justIcon
@@ -75,7 +75,7 @@ export default function LoginPage(props) {
                       >
                         <i className={"fab fa-facebook"} />
                       </Button>
-                      <Button
+                      {/*<Button
                         justIcon
                         href="#pablo"
                         target="_blank"
@@ -83,10 +83,10 @@ export default function LoginPage(props) {
                         onClick={e => e.preventDefault()}
                       >
                         <i className={"fab fa-google-plus-g"} />
-                      </Button>
+                      </Button>*/}
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
+                  <p className={classes.divider}>O clásicamente.</p>
                   <CardBody>
                     <CustomInput
                       labelText="First Name..."

@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="InnoGoals"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -46,6 +46,7 @@ export default function Components(props) {
           height: 400,
           color: "white"
         }}
+        
         {...rest}
       />
       <Parallax image={require("assets/img/bg4.jpg")}>
@@ -53,7 +54,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>InnoGoals</h1>
                 <h3 className={classes.subtitle}>
                   A Badass Material-UI Kit based on Material Design.
                 </h3>
@@ -65,7 +66,7 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        <SectionNavbars />
+        {/*<SectionNavbars />
         <SectionTabs />
         <SectionPills />
         <SectionNotifications />
@@ -82,7 +83,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload />*/}
       </div>
       <Footer />
     </div>

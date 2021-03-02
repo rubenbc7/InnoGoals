@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/*<ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Components"
@@ -48,17 +48,56 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         />
-      </ListItem>
+        </ListItem>*/}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="/"
           color="transparent"
-          target="_blank"
+          //target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          {/*<CloudDownload className={classes.icons} />*/}
+          Inicio
         </Button>
       </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/landing-page"
+          color="transparent"
+          //target="_blank"
+          className={classes.navLink}
+        >
+          {/*<CloudDownload className={classes.icons} />*/}
+          Tableros
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/profile-page"
+          color="transparent"
+          //target="_blank"
+          className={classes.navLink}
+        >
+          {/*<CloudDownload className={classes.icons} />*/}
+          Perfil
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/login-page"
+          color="transparent"
+          //target="_blank"
+          className={classes.navLink}
+        >
+          {/*<CloudDownload className={classes.icons} />*/}
+          Registro
+        </Button>
+      </ListItem>
+
+      {/* WhatsApp */}
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
@@ -67,30 +106,33 @@ export default function HeaderLinks(props) {
         </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Contactanos por WhatsApp"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://api.whatsapp.com/message/JPSPRYOU5HBXC1"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <i className={classes.socialIcons + " fab fa-whatsapp"} />
           </Button>
         </Tooltip>
       </ListItem>
+
+      {/* Facebook */}
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Siguenos en Facebook"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/innosoluciones"
             target="_blank"
             className={classes.navLink}
           >
@@ -98,7 +140,8 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
+
+      {/*<ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
@@ -114,7 +157,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem>*/}
     </List>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
+//firebase
+
 import classNames from "classnames";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
@@ -33,6 +35,8 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
+  
+
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -53,8 +57,15 @@ export default function Components(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
+              <div className="App">
+                <h1>Uppercut heavy machinegun</h1>
+              </div>
               <div className={classes.brand}>
+<<<<<<< HEAD
+                <h1 className={classes.title}>Pibes Pibes Pibes.</h1>
+=======
                 <h1 className={classes.title}>InnoGoals</h1>
+>>>>>>> 02cc47c434972d72589cb46b0840d801e29d8c02
                 <h3 className={classes.subtitle}>
                   A Badass Material-UI Kit based on Material Design.
                 </h3>

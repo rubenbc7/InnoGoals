@@ -16,6 +16,7 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
+import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 
 import profile from "assets/img/faces/christian.jpg";
 
@@ -67,8 +68,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Juan Barriga</h3>
+                    <h6>DISEÑADOR</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -90,7 +91,34 @@ export default function ProfilePage(props) {
                 feel with a solid groove structure.{" "}
               </p>
             </div>
-            <GridContainer justify="center">
+            <div id="buttons">
+          <div className={classes.title}>
+            <h2>
+              Mi progreso
+            </h2>
+          </div>
+          <h2>
+            <small>Ultimos logros</small>
+                <br />
+                <small>Descripcion logro 1</small>
+                <br />
+                <small>Descripcion logro 2</small>
+                <br />
+                <small>Descripcion logro 3</small>
+          </h2>
+          <Button color="primary" simple>
+            <h3>Ver todos los logros!</h3>
+          </Button>
+          <div className={classes.space50} />
+          <h2>Meta mensual</h2>
+          <CustomLinearProgress
+                variant="determinate"
+                color="primary"
+                value={30}
+          />
+        </div>
+        <br/>
+            {/*<GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
@@ -205,7 +233,7 @@ export default function ProfilePage(props) {
                   ]}
                 />
               </GridItem>
-            </GridContainer>
+                </GridContainer>*/}
           </div>
         </div>
       </div>

@@ -79,7 +79,7 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Juan Zazueta
+                Roberto Villanueva
                 <br />
                 <small className={classes.smallTitle}>Diseñador</small>
               </h4>

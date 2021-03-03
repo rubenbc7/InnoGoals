@@ -68,7 +68,7 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Juan Barriga</h3>
+                    <h3 className={classes.title}>Juan Zazueta</h3>
                     <h6>DISEÑADOR</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
@@ -85,37 +85,87 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                Me considero una persona bastante creativa, amigable y muy trabajadora. 
+                Puedes contar conmigo para cualquier cosa y trataré de ayudarte a solucionarlo. 
+                Además soy Tauro y me gusta el ciclismo y los videojuegos. 
+                Tengo un tsuru tuneado.{" "}
               </p>
             </div>
             <div id="buttons">
           <div className={classes.title}>
             <h2>
-              Mi progreso
+              Mis logros
             </h2>
           </div>
-          <h2>
-            <small>Ultimos logros</small>
+          <NavPills
+              color="success"
+              tabs={[
+                {
+                  tabButton: "Puntualidad",
+                  tabContent: (
+                    <span>
+                      <p>
+                      <small>Realizaste 3 o más trabajos en una semana - 45i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Cumpliste 6 meses trabajando con nosotros - 30i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Ganaste 2 o más veces consecutivas el premio de equipos - 50i</small>   
+                      </p>
+                    </span>
+                  )
+                },
+                {
+                  tabButton: "Desempeño",
+                  tabContent: (
+                    <span>
+                      <p>
+                      <small>Realizaste 3 o más trabajos en una semana - 45i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Cumpliste 6 meses trabajando con nosotros - 30i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Ganaste 2 o más veces consecutivas el premio de equipos - 50i</small>   
+                      </p>
+                    </span>
+                  )
+                },
+                {
+                  tabButton: "Asiduidad",
+                  tabContent: (
+                    <span>
+                      <p>
+                      <small>Realizaste 3 o más trabajos en una semana - 45i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Cumpliste 6 meses trabajando con nosotros - 30i</small>
+                      </p>
+                      <br />
+                      <p>
+                        <small>Ganaste 2 o más veces consecutivas el premio de equipos - 50i</small>   
+                      </p>
+                    </span>
+                  )
+                }
+              ]}
+            />
+          {/*<h2>
+            
+            
                 <br />
-                <small>Descripcion logro 1</small>
+                <small className={classes.logros}> Realizaste 3 o más trabajos en una semana - 45i </small>
                 <br />
-                <small>Descripcion logro 2</small>
+                <small> Cumpliste 6 meses trabajando con nosotros - 30i </small>
                 <br />
-                <small>Descripcion logro 3</small>
-          </h2>
-          <Button color="primary" simple>
-            <h3>Ver todos los logros!</h3>
-          </Button>
-          <div className={classes.space50} />
-          <h2>Meta mensual</h2>
-          <CustomLinearProgress
-                variant="determinate"
-                color="primary"
-                value={30}
-          />
+                <small> Ganaste 2 o más veces consecutivas el premio de equipos - 50i </small>
+          </h2>*/}
         </div>
         <br/>
             {/*<GridContainer justify="center">

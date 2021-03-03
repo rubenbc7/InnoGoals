@@ -40,9 +40,9 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Guadalupe López
+                Manuel Gozález
                 <br />
-                <small className={classes.smallTitle}>Administradora</small>
+                <small className={classes.smallTitle}>Conserje</small>
               </h4>
               <CardBody>
                 <Button color="primary" round>Ver Perfil</Button>
@@ -114,7 +114,7 @@ export default function TeamSection() {
                 <small className={classes.smallTitle}>Diseñadora</small>
               </h4>
               <CardBody>
-                <Button color="primary" round>Ver Perfil</Button>
+               <Button color="primary" round>Ver Perfil</Button>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button

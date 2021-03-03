@@ -19,6 +19,13 @@ const profilePageStyle = {
     color: "#999",
     textAlign: "center !important"
   },
+  logros: {
+    margin: "1.071rem auto 0",
+    maxWidth: "600px",
+    color: "black",
+    textAlign: "center"
+    
+  },
   name: {
     marginTop: "-80px"
   },

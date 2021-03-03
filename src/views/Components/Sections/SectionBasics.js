@@ -50,17 +50,17 @@ export default function SectionBasics() {
         <div id="buttons">
           <div className={classes.title}>
             <h2>
-              Mi progreso
+              Tu progreso en InnoGoals.
             </h2>
           </div>
           <h3>
-            <small>Ultimos logros</small>
+            <small>Ultimos logros conseguidos</small>
                 <br />
-                <small>Descripcion logro 1</small>
+                <small>Realizaste 3 o más trabajos en una semana - 45i</small>
                 <br />
-                <small>Descripcion logro 2</small>
+                <small>Cumpliste 6 meses trabajando con nosotros - 30i</small>
                 <br />
-                <small>Descripcion logro 3</small>
+                <small>Ganaste 2 o más veces consecutivas el premio de equipos - 50i</small>
           </h3>
           <Button color="primary" simple>
             <h5>Ver todos tus logros!</h5>
@@ -95,30 +95,30 @@ export default function SectionBasics() {
         <div id="progress">
           <div className={classes.title}>
             <h2>
-              Progreso del equipo
+              Progreso de tu equipo.
             </h2>
           </div>
           <h3>
-            <small>Tu equipo esta semana es:</small>
+            <small>Esta semana tu equipo es:</small>
                 <br />
                 <small>Luis Alfonso</small>
                 <br />
                 <small>Puesto: Conserje</small>
                 <br />
-                <small>Ultimo logro: Descripcion del logro</small>
+                <small>Ultimo logro: Puntualidad perfecta durante un mes o más - 25i</small>
                 <br />
                 <Button color="primary" simple>
-                  <h5>Ver todos sus logros!</h5>
+                  <h5>Ver su perfil!</h5>
                 </Button>
                 <div className={classes.space50}/>
                 <small>Maria Duarte</small>
                 <br />
                 <small>Puesto: Secretaria</small>
                 <br />
-                <small>Ultimo logro: Descripcion del logro</small>
+                <small>Ultimo logro: Votada como la más amigable del mes de Marzo - 35i</small>
                 <br />
                 <Button color="primary" simple>
-                  <h5>Ver todos sus logros!</h5>
+                  <h5>Ver su perfil!!</h5>
                 </Button>
           </h3>
           <div>

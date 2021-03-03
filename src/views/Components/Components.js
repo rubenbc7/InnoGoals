@@ -34,6 +34,8 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
+
+
 export default function Components(props) {
   
 
@@ -57,13 +59,11 @@ export default function Components(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
-              <div className="App">
-                <h1>Uppercut heavy machinegun</h1>
-              </div>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Pibes Pibes Pibes.</h1>
+                <h1  className={classes.subtitle}> Buenos días</h1>
+                <h1 className={classes.title}>Juan Zazueta</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Diseñador UI/UX
                 </h3>
               </div>
             </GridItem>
@@ -73,24 +73,6 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        {/*<SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
-        <SectionExamples />
-        <SectionDownload />*/}
       </div>
       <Footer />
     </div>

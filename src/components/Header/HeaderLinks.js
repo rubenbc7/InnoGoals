@@ -69,7 +69,7 @@ export default function HeaderLinks(props) {
           className={classes.navLink}
         >
           {/*<CloudDownload className={classes.icons} />*/}
-          Tableros
+          Equipos
         </Button>
       </ListItem>
 

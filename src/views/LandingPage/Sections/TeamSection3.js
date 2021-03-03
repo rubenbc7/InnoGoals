@@ -13,12 +13,13 @@ import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "assets/img/faces/card-profile4-square.jpg";
+import team2 from "assets/img/faces/card-profile5-square.jpg";
+import team3 from "assets/img/faces/card-profile6-square.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +32,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Equipo semanal  </h2>
+      <h2 className={classes.title}>Equipo #3  </h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -40,7 +41,7 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Guadalupe López
+                Lourdes Hoyos
                 <br />
                 <small className={classes.smallTitle}>Administradora</small>
               </h4>
@@ -78,7 +79,7 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Juan Zazueta
+                Rebeca Félix
                 <br />
                 <small className={classes.smallTitle}>Diseñador</small>
               </h4>
@@ -109,7 +110,7 @@ export default function TeamSection() {
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                María Rodríguez
+                Fernanda Lizárraga
                 <br />
                 <small className={classes.smallTitle}>Diseñadora</small>
               </h4>
@@ -141,6 +142,20 @@ export default function TeamSection() {
               </CardFooter>
             </Card>
           </GridItem>
+          <GridItem>
+          <div>
+            <CustomLinearProgress
+              variant="determinate"
+              color="success"
+              value={50}
+            />
+              <h4 className={classes.cardTitle}>
+                <p style={{ float: 'center' }}>50%</p>
+              </h4>
+
+          </div>
+          </GridItem>
+
         </GridContainer>
       </div>
     </div>

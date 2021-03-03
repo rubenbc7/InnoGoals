@@ -13,6 +13,7 @@ import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
@@ -31,7 +32,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Equipo semanal  </h2>
+      <h2 className={classes.title}>Equipo #1  </h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -83,7 +84,7 @@ export default function TeamSection() {
                 <small className={classes.smallTitle}>Diseñador</small>
               </h4>
               <CardBody>
-                <Button color="primary" round>Ver Perfil</Button>
+                <Button href="/profile-page" color="primary" round>Ver Perfil</Button>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
@@ -140,6 +141,18 @@ export default function TeamSection() {
                 </Button>
               </CardFooter>
             </Card>
+          </GridItem>
+          <GridItem>
+          <div>
+            <CustomLinearProgress
+              variant="determinate"
+              color="success"
+              value={75}
+            />
+            <h4 className={classes.cardTitle}>
+                <p style={{ float: 'center' }}>75%</p>
+              </h4>
+          </div>
           </GridItem>
         </GridContainer>
       </div>
